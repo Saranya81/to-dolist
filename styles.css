@@ -1,0 +1,131 @@
+
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image:url(browy.webp); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    
+    background-color: #fab1a4;
+    border-radius: 10px;
+    margin: 150px auto;
+    overflow: hidden;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: #2b2222;
+}
+
+h1 {
+    background-color:#fab1a4;
+    color: #0c0c0c;
+    margin: 0;
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+h1 img {
+    margin-left: 8px;
+    height: 40px; 
+}
+
+#inputbox {
+    width: calc(70% - 8px);
+    padding: 8px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+
+}
+
+button {
+    padding: 8px;
+    margin: 3px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ba6651;
+    color: #fffdfd;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b23a1b;
+}
+
+ul {
+    padding: 0; 
+}
+
+ul li {
+    list-style-type: none; 
+    padding: 1px;
+    border-bottom: 1px solid #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px; 
+}
+
+span {
+    flex: 1;
+}
+
+li button {
+    width: 30px;
+    background-color: #444242;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #6d6868;
+}
+
+input, button {
+    
+}
+
+@media only screen and (max-width: 768px) {
+    
+
+    .container {
+         /* Adjust the left margin for smaller screens */
+        width: 50%;
+        /* Make the container full width for smaller screens */
+    }
+    #inputbox 
+    {
+        width: 85%;
+        display: block; /* Ensure the button takes the full width on smaller screens */
+        margin: 8px auto;
+    }
+    button {
+        
+        display: block; /* Ensure the button takes the full width on smaller screens */
+        margin: 8px auto; /* Center the button horizontally */
+    }
+}
+
